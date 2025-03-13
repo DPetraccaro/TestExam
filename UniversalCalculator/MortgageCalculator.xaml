@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Calculator.MortgageCalculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid Padding="20">
+		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Background="LightBlue">
+			<TextBlock Text="Mortgage Calculator" FontSize="30" FontWeight="Bold" Margin="20" TextAlignment="Center"/>
+
+			<TextBlock Text="Principal Borrow $:" VerticalAlignment="Center" TextAlignment="Center"/>
+			<TextBox x:Name="Principal" Width="200"/>
+
+			<TextBlock Text="Years:" TextAlignment="Center"/>
+			<TextBox x:Name="Years" Width="200"/>
+
+			<TextBlock Text="Months:" TextAlignment="Center"/>
+			<TextBox x:Name="Months" Width="200"/>
+
+			<TextBlock Text="Yearly Interest Rate:" TextAlignment="Center"/>
+			<TextBox x:Name="YearlyInterestRate" Width="200"/>
+
+			<TextBlock Text="Monthly Interest Rate (%):" TextAlignment="Center"/>
+			<TextBox x:Name="MonthlyInterestRate" Width="200" IsHitTestVisible="False"/>
+
+			<TextBlock Text="MonthlyRepayment $:" TextAlignment="Center"/>
+			<TextBox x:Name="MonathlyRepayment" Width="200" IsHitTestVisible="False"/>
+
+
+			<StackPanel Margin="5">
+				<Button Content="Calculate" Click="CalculateMortgage"  HorizontalAlignment="center" Width="100" />
+			</StackPanel>
+			<StackPanel  Margin="5">
+				<Button Content="Exit" Click="Exit" HorizontalAlignment="center" Width="100" />
+			</StackPanel>
+
+			<TextBox x:Name="MessageBox" Width="400" IsHitTestVisible="False"/>
+		</StackPanel>
+	</Grid>
+</Page>
