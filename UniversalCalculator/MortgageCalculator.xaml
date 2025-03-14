@@ -18,12 +18,18 @@
 			<TextBlock Text="Months:" TextAlignment="Center"/>
 			<TextBox x:Name="Months" Width="200"/>
 
-			<TextBlock Text="Yearly Interest Rate:" TextAlignment="Center"/>
+			//dev change keep
+			<TextBlock Text="Yearly Interest Rates:" TextAlignment="Center"/>
 			<TextBox x:Name="YearlyInterestRate" Width="200"/>
 
 			<TextBlock Text="Monthly Interest Rate (%):" TextAlignment="Center"/>
 			<TextBox x:Name="MonthlyInterestRate" Width="200" IsHitTestVisible="False"/>
 
+			// dev new change 'daily'
+			<TextBlock Text="daily Interest Rate (%):" TextAlignment="Center"/>
+			<TextBox x:Name="dailyInterestRate" Width="200" IsHitTestVisible="False"/>
+
+			
 			<TextBlock Text="MonthlyRepayment $:" TextAlignment="Center"/>
 			<TextBox x:Name="MonathlyRepayment" Width="200" IsHitTestVisible="False"/>
 
